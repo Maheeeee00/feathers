@@ -711,3 +711,22 @@ a.mini:hover{border-color:var(--green-700)}
 .intro-grid h2{margin-bottom:18px}
 .values-grid.five .value-card:nth-child(4){grid-column:1}
 .contact-list li>span{flex:none}
+
+/* ===== Banner on every inner page + polish ===== */
+.page-hero{min-height:400px;display:flex;align-items:center;padding:56px 0;background:#eaf4f6 var(--img) no-repeat;background-size:var(--size,cover);background-position:var(--pos,center right);border-bottom:0;position:relative}
+.page-hero .container{width:min(1180px,100% - 32px)}
+.hero-panel{max-width:620px;background:rgba(255,255,255,.88);padding:32px 38px;border-radius:8px;box-shadow:var(--shadow-sm);border-left:4px solid var(--gold)}
+.hero-panel h1{font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:12px}
+.hero-panel .lead{font-size:1.05rem;margin:0}
+.hero-panel .crumbs{margin-bottom:14px}
+.hero-panel .eyebrow{margin-bottom:8px}
+.eyebrow::before{content:"";display:inline-block;width:26px;height:2px;background:var(--gold);margin-right:10px;vertical-align:middle}
+.section-head.center .eyebrow::before{display:none}
+.section-head h2{position:relative}
+.section-head.center h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin:16px auto 0}
+.value-card,.eco-card,.div-card,.product{transition:box-shadow .25s,border-color .25s}
+.value-card:hover,.eco-card:hover,.div-card:hover{box-shadow:var(--shadow);border-color:var(--green-500)}
+.div-card{box-shadow:var(--shadow-sm)}
+.value-card{border-top:3px solid transparent}
+.value-card:hover{border-top-color:var(--green-700)}
+@media (max-width:860px){.page-hero{min-height:320px;padding:36px 0}.hero-panel{padding:24px 22px}}
